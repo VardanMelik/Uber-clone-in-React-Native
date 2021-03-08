@@ -2,4 +2,5 @@
 Uber clone in React Native
 
 
-1)  https://www.npmjs.com/package/react-native-vector-icons
+1) npm install -g expo-cli  
+2) https://www.npmjs.com/package/react-native-vector-icons
