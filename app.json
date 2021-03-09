@@ -2,11 +2,12 @@
   "name": "ber",
   "displayName": "ber",
   "expo": {
-    "name": "ber",
-    "slug": "ber",
+    "name": "Uber",
+    "slug": "uber",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": "Uber clone"
   }
 }

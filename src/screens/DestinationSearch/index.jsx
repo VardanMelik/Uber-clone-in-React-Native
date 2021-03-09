@@ -8,6 +8,9 @@ const DestinationSearch = (props) => {
     const [fromText, setFromText] = useState();
     const [destinationText, setDestinationText] = useState();
 
+    const [originPlace, setOriginPlace] = useState(null);
+    const [destinationPlace, setDestinationPlace] = useState(null);
+
     return (
         <SafeAreaView>
             <View style={styles.container}>
@@ -24,11 +27,13 @@ const DestinationSearch = (props) => {
                     placeholder="Where to" />
 
                 <GooglePlacesAutocomplete
-                    placeholder='Search'
+                    placeholder='Where to?'
                     onPress={(data, details = null) => {
                         // 'details' is provided when fetchDetails = true
+                        setDestinationPlace({data, details});
                         console.log(data, details);
                     }}
+                    fetchDetails
                     query={{
                         key: 'AIzaSyDzE0DQ5s7BbITuzwyPh-QheFjPRtvn69U',
                         language: 'en',
